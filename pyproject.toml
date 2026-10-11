@@ -1,0 +1,12 @@
+[project]
+name = "translation-eval-example"
+version = "0.1.0"
+description = "Pydantic models and deterministic evals for AI translation"
+requires-python = ">=3.10"
+dependencies = ["pydantic>=2.7,<3"]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
